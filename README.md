@@ -30,4 +30,10 @@
             - See ./constants/colors.js for export
             - Header.js and StartGameScreen.js for import
 
+4.  5th Commit: Configuring / Passing Input Props
+
+            - See ./components/StartGameScreen.js to see different
+                props that can be passed, see API docs for more info
+            - See ./components/Input.js to see how to pass config props
+
 ## 3. Useful Resources and Links:
