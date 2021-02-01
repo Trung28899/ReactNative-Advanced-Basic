@@ -36,4 +36,14 @@
                 props that can be passed, see API docs for more info
             - See ./components/Input.js to see how to pass config props
 
+5.  6th Commit: Cleaning User Input:
+
+            - See ./components/StartGameScreen.js
+                +, Look for KeyBoard. This is not a component, it is an API
+                +, See the props in Input
+            - See TouchableWithoutFeedback, This component with its onPress
+                props allow user to close keyboard by clicking white space
+                (after hit the input > keyboard opened)
+                > This improve User Experience
+
 ## 3. Useful Resources and Links:
