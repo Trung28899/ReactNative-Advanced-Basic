@@ -24,4 +24,10 @@
             +, How to use Card as a wrapper
             +, How to pass styling into Card
 
+3.  4th Commit: Color theming with constants:
+    (Video 60)
+
+            - See ./constants/colors.js for export
+            - Header.js and StartGameScreen.js for import
+
 ## 3. Useful Resources and Links:
