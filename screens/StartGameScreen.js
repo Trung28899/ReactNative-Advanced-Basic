@@ -6,6 +6,7 @@ import {
   Button,
   TouchableWithoutFeedback,
   Keyboard,
+  Alert,
 } from "react-native";
 import Card from "../components/Card";
 import Colors from "../constants/colors";
@@ -13,13 +14,36 @@ import Input from "../components/Input";
 
 const StartGameScreen = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
+  const [confirmed, setConfirmed] = useState(false);
+  const [selectedNumber, setSelectedNumber] = useState();
+
   const numberInputHandler = (inputText) => {
-    /*
-      replace any character that is not number with an empty string
-      so user can't input any other characters other than numbers
-    */
     setEnteredValue(inputText.replace(/[^0-9]/g, ""));
   };
+  const resetInputHandler = () => {
+    setEnteredValue("");
+    setConfirmed(false);
+  };
+  const confirmInputHandler = () => {
+    const chosenNumber = parseInt(enteredValue);
+
+    if (isNaN(chosenNumber) || chosenNumber <= 0 || chosenNumber > 100) {
+      Alert.alert("Invalid Number !", "Number has to be between 1 and 100", [
+        { text: "Okay", style: "destructive", onPress: resetInputHandler },
+      ]);
+      return;
+    }
+    setConfirmed(true);
+    setEnteredValue("");
+    setSelectedNumber(chosenNumber);
+  };
+
+  let confirmedOutPut;
+
+  if (confirmed) {
+    confirmedOutPut = <Text>Chosen Number: {selectedNumber}</Text>;
+  }
+
   return (
     <TouchableWithoutFeedback
       onPress={() => {
@@ -44,17 +68,20 @@ const StartGameScreen = (props) => {
             <View style={styles.button}>
               <Button
                 title="Reset"
-                onPress={() => {
-                  setEnteredValue("");
-                }}
+                onPress={resetInputHandler}
                 color={Colors.accent}
               />
             </View>
             <View style={styles.button}>
-              <Button title="Confirm" color={Colors.primary} />
+              <Button
+                onPress={confirmInputHandler}
+                title="Confirm"
+                color={Colors.primary}
+              />
             </View>
           </View>
         </Card>
+        {confirmedOutPut}
       </View>
     </TouchableWithoutFeedback>
   );

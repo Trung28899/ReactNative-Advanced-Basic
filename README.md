@@ -32,18 +32,25 @@
 
 4.  5th Commit: Configuring / Passing Input Props
 
-            - See ./components/StartGameScreen.js to see different
+            - See ./screens/StartGameScreen.js to see different
                 props that can be passed, see API docs for more info
             - See ./components/Input.js to see how to pass config props
 
 5.  6th Commit: Cleaning User Input:
 
-            - See ./components/StartGameScreen.js
+            - See ./screens/StartGameScreen.js
                 +, Look for KeyBoard. This is not a component, it is an API
                 +, See the props in Input
             - See TouchableWithoutFeedback, This component with its onPress
                 props allow user to close keyboard by clicking white space
                 (after hit the input > keyboard opened)
                 > This improve User Experience
+
+6.  7th Commit: Alert Modal Box, Reset and Confirm Input
+
+            - In ./screens/StartGameScreen.js:
+                +, See Alert for Alert Modal Box
+                +, See confirmInputHandler() and resetInputHandler()
+                    for Reset and Confirm Input
 
 ## 3. Useful Resources and Links:
