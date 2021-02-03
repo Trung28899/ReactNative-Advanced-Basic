@@ -53,4 +53,15 @@
                 +, See confirmInputHandler() and resetInputHandler()
                     for Reset and Confirm Input
 
+7.  8th Commit: Additional Game Logics  
+    (Video 65 - 69)
+
+            - This Commit includes:
+                +, Adding Random Number Generation
+                +, Switching Between multiple screens
+                +, Addming Game Features: Hints & Validation
+                +, Implement Winning Logic
+
+            - See App.js and screens in ./screens/
+
 ## 3. Useful Resources and Links:
