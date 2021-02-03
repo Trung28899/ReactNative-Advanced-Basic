@@ -6,6 +6,10 @@
             +, shadow properties only applied to IOS
             +, elevation property only Appy to Android
 
+    PACKAGES:
+        $ expo install expo-app-loading
+        $ npm install --save expo-font
+
 ## 2. Module Notes:
 
 1.  2nd Commit: Custom components
@@ -63,5 +67,12 @@
                 +, Implement Winning Logic
 
             - See App.js and screens in ./screens/
+
+8.  9th Commit: Custom Fonts and AppLoading
+
+            - See code in App.js
+            - Custom Font in this module is not working
+            - AppLoading is the expo component that allow the app
+            to run async code before render any View
 
 ## 3. Useful Resources and Links:
