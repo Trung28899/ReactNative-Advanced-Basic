@@ -8,6 +8,8 @@ const BodyText = (props) => {
 const styles = StyleSheet.create({
   body: {
     fontWeight: "800",
+    textAlign: "center",
+    fontSize: 20,
   },
 });
 

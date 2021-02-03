@@ -75,7 +75,7 @@
             - AppLoading is the expo component that allow the app
             to run async code before render any View
 
-9, 10th, 11st Commit: Working with local and network Image
+9.  10th, 11st Commit: Working with local and network Image
 
             - See code in GameOverScreen.js
             - See the styling of:
@@ -83,5 +83,10 @@
                 +, image
             - See 10th Commit for local image, 11st for network image
 
+10. 12nd Commit: How <Text> Work:
+
+            - See code in GameOverScreen.js:
+                +, Notice the use of <Text> in <BodyText>
+                +, Text can contain Text and doesn't have flexbox style applied
 
 ## 3. Useful Resources and Links:

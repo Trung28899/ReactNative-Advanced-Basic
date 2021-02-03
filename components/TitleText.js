@@ -10,6 +10,7 @@ const TitleText = (props) => {
 const styles = StyleSheet.create({
   body: {
     fontWeight: "800",
+    fontSize: 20,
   },
 });
 
