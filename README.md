@@ -75,4 +75,11 @@
             - AppLoading is the expo component that allow the app
             to run async code before render any View
 
+9, 10th Commit: Working with local Image
+
+            - See code in GameOverScreen.js
+            - See the styling of:
+                +, imageContainer
+                +, image
+
 ## 3. Useful Resources and Links:
