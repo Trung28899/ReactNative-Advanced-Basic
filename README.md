@@ -88,5 +88,29 @@
             - See code in GameOverScreen.js:
                 +, Notice the use of <Text> in <BodyText>
                 +, Text can contain Text and doesn't have flexbox style applied
+                +, See video 78, docs 79 for more information
+
+11. 13rd Commit: Custom Button, Working with Icons and Fixed Font
+
+            - Custom Button:
+                +, Video 80
+                +, See ./components/MainButton.js
+                +, Search 'MainButton' in StartGameScreen, GameOverScreen and GameScreen.js
+
+            - Working with Icons:
+                +, Video 81
+                +, In GameScreen.js
+                    > Search for Ionicons
+                +, See this link (1, 2) in 3. Useful Resources and Links for guide
+
+            - Working with Fonts:
+                +, Run $ expo upgrade
+                +, See 9th Commit for guide
 
 ## 3. Useful Resources and Links:
+
+(1). Using Expo Icons:
+https://docs.expo.io/guides/icons/#expovector-icons
+
+(2). Expo Icon Search Directory:
+https://icons.expo.fyi/

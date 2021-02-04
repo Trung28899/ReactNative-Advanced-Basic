@@ -44,13 +44,6 @@ export default function App() {
   };
 
   let content = <StartGameScreen onStartGame={startGameHandler} />;
-  let testContent = (
-    <GameOverScreen
-      roundsNumber={guessRounds}
-      userNumber={userNumber}
-      onRestart={configureNewGameHandler}
-    />
-  );
 
   if (userNumber && guessRounds <= 0) {
     content = (
@@ -69,7 +62,7 @@ export default function App() {
   return (
     <View style={styles.screen}>
       <Header title="Guess a Number" />
-      {testContent}
+      {content}
     </View>
   );
 }
