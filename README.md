@@ -107,7 +107,29 @@
                 +, Run $ expo upgrade
                 +, See 9th Commit for guide
 
-## 3. Useful Resources and Links:
+## 3. Summary:
+
+Up until this point, we already covered these basic components for
+React Native:
+
+        - View: Container & Layout Component
+        - Text: Output Text, Control Text Style
+        - TextInput: Receive User Input (via Soft Keyboard)
+        - Button: Platform adaptive Button
+        - FlatList: Performance optimized Scrollable List
+        - ScrollView: non-optimized Scrollable View / Container
+        - Image: Output Local or Network Images
+        - Stylesheet: Validated, Potentially Optimized Style Config
+
+All of these you can see the code in 2 links down below:
+
+        - Basic Repo:
+        https://github.com/Trung28899/ReactNative-Basic-And-Debug
+
+        - Advanced Basic Repo:
+        https://github.com/Trung28899/ReactNative-Advanced-Basic
+
+## 4. Useful Resources and Links:
 
 (1). Using Expo Icons:
 https://docs.expo.io/guides/icons/#expovector-icons
