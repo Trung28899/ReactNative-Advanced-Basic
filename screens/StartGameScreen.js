@@ -19,7 +19,7 @@ import MainButton from "../components/MainButton";
 const StartGameScreen = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
   const [confirmed, setConfirmed] = useState(false);
-  const [selectedNumber, setSelectedNumber] = useState();
+  const [selectedNumber, setSelectedNumber] = useState(0);
 
   const numberInputHandler = (inputText) => {
     setEnteredValue(inputText.replace(/[^0-9]/g, ""));
@@ -72,7 +72,6 @@ const StartGameScreen = (props) => {
             blurOnSubmit
             autoCapitalized="none"
             autoCorrect={false}
-            keyboardType="number-pad"
             maxLength={2}
             onChangeText={numberInputHandler}
             value={enteredValue}
